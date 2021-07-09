@@ -1,0 +1,30 @@
+.vote-system {
+  font-family: sans-serif;
+  text-align: center;
+}
+
+.poll {
+  display: grid;
+  gap: 15px;
+  grid-template-columns: 1fr;
+}
+
+.vote-form {
+  display: grid;
+  gap: 10px;
+}
+
+/* fr - ratio */
+/* min-with - yes, max-width -no */
+
+@media (min-width: 600px) {
+  .poll {
+    grid-template-columns: repeat(3, 1fr);
+    /* grid-template-columns: 1fr 1fr 1fr; */
+  }
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
